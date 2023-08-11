@@ -1,9 +1,16 @@
 import React, { Suspense, lazy } from "react";
 import logo from "./assets/logo.png";
 import heroIMG from "./assets/hero_image.svg";
+import linkedinLogo from "./assets/linkedin.svg";
+import githubLogo from "./assets/github.svg";
+import gmailLogo from "./assets/gmail.svg";
+
 function App() {
   const SkillsSection = lazy(() => import("./sections/skillsSection.jsx"));
   const ProjectsSection = lazy(() => import("./sections/projectsSection.jsx"));
+  const ContactSection = lazy(() => import("./sections/ContactSection.jsx"));
+
+
   return (
     <div className="App bg-background text-text font-Roboto">
       <header>
@@ -41,12 +48,28 @@ function App() {
             bit of experience in building fully accessible and swift websites.
           </p>
         </section>
-        <section id="experience">
-          <Suspense fallback={<div className="Loading">loading...</div>}>
-            <SkillsSection />
+        <Suspense fallback={<div className="Loading">loading...</div>}>
+          <section id="experience">
             <ProjectsSection />
-          </Suspense>
-        </section>
+            <SkillsSection />
+          </section>
+          <ContactSection />
+        </Suspense>
+        <footer>
+          <p>Handcrafted by me ©️ 2022</p>
+          <ul>
+            
+            <a href="https://www.linkedin.com/in/mohanad-aldardiry-175614239/">
+              <img src={linkedinLogo} alt="Linkedin Logo " />
+            </a>
+            <a href="mailto:mohanad.ALdardiry@gmail.com">
+              <img src={gmailLogo} alt="Gmail Logo " />
+            </a>
+            <a href="https://github.com/Mohannad-AlDardiri">
+              <img src={githubLogo} alt="github Logo " />
+            </a>
+          </ul>
+        </footer>
       </main>
     </div>
   );

@@ -2,31 +2,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
 
-/* golden ratio */
-/* 61.803398875% || 38.196601125 */
 :root {
   --phi: 1.6180339887498948482;
   --base-height: 17rem;
   --small-golden: 38.196601125%;
   --big-golden: 61.803398875%;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 section,
-nav {
+nav, 
+footer {
   @apply px-6 py-2 sm:px-8 sm:py-3 lg:px-14 lg:py-4 xl:px-16 2xl:px-20;
 }
 .loading {
   @apply flex justify-center items-center h-full w-full;
 }
 /* nav  */
-nav {
+nav, footer {
   @apply bg-primary text-background flex justify-between items-center w-screen;
 }
 nav > img {
-  @apply w-10 sm:w-12 lg:w-14;
+  @apply w-10 sm:w-12 lg:w-14 xl:w-16 2xl:w-20;
 }
-nav > ul {
-  @apply lg:text-lg;
+nav ul a , footer p {
+  @apply lg:text-lg xl:text-xl 2xl:text-2xl;
 }
 nav > ul a:first-child {
   @apply pr-4 sm:pr-8;
@@ -49,18 +53,19 @@ main > section.landing > img {
   @apply h-[17rem] sm:h-[22rem] md:h-[20rem] lg:h-[27rem] xl:h-[35rem] 2xl:h-[43rem] md:static md:min-w-[auto];
 }
 /* about */
-main > section.about {
+main > section.about,
+main> footer  {
   @apply bg-text text-secondary;
 }
-main > section.about h2 {
-  @apply text-4xl font-light my-6 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl;
+main > section.about h2,
+main > section.contact h2 {
+  @apply text-4xl font-light my-6 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl;
 }
 main > section.about p {
-  @apply mb-6 text-sm md:text-base lg:text-lg xl:text-xl;
+  @apply mb-6 text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl;
 }
 
-main > #experience {
-}
+
 main > #experience h3 {
   @apply mb-6 lg:mb-8 xl:mb-10 2xl:mb-12 font-light text-3xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl;
 }
@@ -72,10 +77,10 @@ main > #experience section.projects .project {
   @apply bg-contain	bg-center	bg-no-repeat relative w-fit rounded-md mb-8 md:mb-0 overflow-hidden md:w-[45%] md:flex-grow ;
 }
 main > #experience section.projects .project img {
+  @apply h-full
 }
-
 main > #experience section.projects .project .projectDetails {
-  @apply h-[70%] bg-primary w-full transition-all duration-[350ms] text-background absolute bottom-0 flex flex-col p-3 items-center justify-between opacity-[0.94] backdrop-blur-md;
+  @apply h-[70%] bg-primary w-full transition-all duration-[450ms] text-background absolute flex flex-col p-3 items-center justify-between opacity-[0.94] backdrop-blur-md bottom-[-17rem];
 }
 main > #experience section.projects .project .projectDetails h4 {
   @apply text-lg mb-4  text-left w-full;
@@ -84,7 +89,7 @@ main > #experience section.projects .project .projectDetails ul {
   @apply flex justify-around;
 }
 main > #experience section.projects .project .projectDetails a {
-  @apply bg-transparent text-background font-medium hover:bg-background hover:text-text py-2 px-4 rounded;
+  @apply bg-transparent mr-2 text-background font-medium hover:bg-background hover:text-text py-2 px-4 duration-300 rounded;
 }
 @media only screen and (min-width: 500px){
   main > #experience section.projects .project .projectDetails {
@@ -111,4 +116,37 @@ main > #experience > section.skills .skill img {
 }
 main > #experience > section.skills .skill p {
   @apply xl:text-xl 2xl:text-2xl;
+}
+
+/* contact */
+main section.contact form {
+  @apply flex flex-col 
+}
+main section.contact form > * {
+  @apply mb-2
+}
+main section.contact form label {
+  @apply md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl
+} 
+main section.contact form input:not(#submitBtn) ,
+main section.contact form textarea{
+  @apply w-full border focus:border border-text rounded-[3px] mb-4 xl:mb-6 p-2 lg:p-3 xl:p-4 lg:text-lg xl:text-xl 2xl:text-2xl 2xl:p-6
+}
+main section.contact form #submitBtn {
+  @apply md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl bg-primary text-background font-medium w-fit cursor-pointer hover:bg-background hover:text-text py-2 px-4 xl:py-4 xl:px-6  duration-300 rounded;
+}
+/* footer  */
+footer {
+  @apply flex justify-between py-3 xl:py-4 2xl:py-6
+}
+
+footer > ul {
+  @apply flex
+}
+
+footer > ul a:nth-child(2) {
+  @apply mx-4 xl:mx-6
+}
+footer > ul img {
+  @apply h-10 md:h-12 xl:h-14 2xl:h-[4.5rem]
 }

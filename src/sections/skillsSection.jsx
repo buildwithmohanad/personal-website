@@ -1,7 +1,6 @@
 import React from "react";
 import Skills_Data from "../assets/Skills_Data.json";
 const skillSection = () => {
-  console.log(1)
   let id = 1;
   return (
     <section className="skills">

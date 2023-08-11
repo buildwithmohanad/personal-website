@@ -13,12 +13,6 @@ module.exports = {
         accent: "#3E373B"
       }
     },
-    goldenRatio: {
-      prefix: true,
-      spacerUnit: "rem",
-      spacerBase: 1.5,
-      useCssVars: true
-    }
-  },
-  plugins: [require("tailwindcss-golden-ratio")]
+    
+  }
 };

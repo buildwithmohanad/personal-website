@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Projects_Data from "../assets/Projects_Data.json";
 function ProjectsSection() {
-  const [style, setStyle] = useState({ bottom: "-14rem" });
 
   let id = 100;
 
@@ -13,15 +12,11 @@ function ProjectsSection() {
           return (
             <div
               key={id++}
-              // style={{
-              //   backgroundImage: `url(assets/Projects/${project.Image})`
-              // }}
               onMouseEnter={(e) => {
-                setStyle({ bottom: "0rem" });
+                e.target.parentNode.querySelector(".projectDetails").style.bottom=0
               }}
               onMouseLeave={(e) => {
-                console.log(this)
-                setStyle({ bottom: "-17rem" });
+                e.target.parentNode.querySelector(".projectDetails").style.bottom= "-19rem"
               }}
               className="project"
             >
@@ -31,7 +26,7 @@ function ProjectsSection() {
                 }
                 alt="project"
               />
-              <div className="projectDetails" style={style}>
+              <div className="projectDetails">
                 <h4>{project.Title}</h4>
                 <ul>
                   <a href={project.Website}>Website</a>
