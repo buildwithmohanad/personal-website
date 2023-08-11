@@ -1,7 +1,6 @@
 import React from "react";
 import Projects_Data from "../assets/Projects_Data.json";
 function ProjectsSection() {
-
   let id = 100;
 
   return (
@@ -13,17 +12,19 @@ function ProjectsSection() {
             <div
               key={id++}
               onMouseEnter={(e) => {
-                e.target.parentNode.querySelector(".projectDetails").style.bottom=0
+                e.target.parentNode.querySelector(
+                  ".projectDetails"
+                ).style.bottom = 0;
               }}
               onMouseLeave={(e) => {
-                e.target.parentNode.querySelector(".projectDetails").style.bottom= "-19rem"
+                e.target.parentNode.querySelector(
+                  ".projectDetails"
+                ).style.bottom = "-19rem";
               }}
               className="project"
             >
               <img
-                src={
-                  process.env.PUBLIC_URL + `assets/Projects/${project.Image}`
-                }
+                src={require(`../assets/Projects/${project.Image}`)}
                 alt="project"
               />
               <div className="projectDetails">

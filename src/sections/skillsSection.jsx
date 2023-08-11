@@ -10,7 +10,8 @@ const skillSection = () => {
           return (
             <div className="skill" key={id++}>
               <img
-                src={process.env.PUBLIC_URL + `assets/Logos/${skill}_Logo.svg`}
+                                    
+                src={require(`../assets/Logos/${skill}_Logo.svg`)}
                 alt={skill}
               />
               <p>{skill}</p>
