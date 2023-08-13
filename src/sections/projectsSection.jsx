@@ -30,8 +30,12 @@ function ProjectsSection() {
               <div className="projectDetails">
                 <h4>{project.Title}</h4>
                 <ul>
-                  <a href={project.Website}>Website</a>
-                  <a href={project.Rebo}>Github</a>
+                  <li>
+                    <a href={project.Website}>Website</a>
+                  </li>
+                  <li>
+                    <a href={project.Rebo}>Github</a>
+                  </li>
                 </ul>
               </div>
             </div>

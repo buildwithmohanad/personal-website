@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import logo from "./assets/logo.png";
+import logo from "./assets/logo.webp";
 import heroIMG from "./assets/hero_image.svg";
 import linkedinLogo from "./assets/linkedin.svg";
 import githubLogo from "./assets/github.svg";
@@ -10,19 +10,22 @@ function App() {
   const ProjectsSection = lazy(() => import("./sections/projectsSection.jsx"));
   const ContactSection = lazy(() => import("./sections/ContactSection.jsx"));
 
-
   return (
     <div className="App bg-background text-text font-Roboto">
       <header>
         <nav>
           <img src={logo} alt="logo" />
           <ul>
-            <a href="#experience" rel="canonical">
-              experience
-            </a>
-            <a href="#contact" rel="canonical">
-              contact
-            </a>
+            <li>
+              <a href="#experience" rel="canonical">
+                experience
+              </a>
+            </li>
+            <li>
+              <a href="#contact" rel="canonical">
+                contact
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -58,16 +61,21 @@ function App() {
         <footer>
           <p>Handcrafted by me ©️ 2022</p>
           <ul>
-            
-            <a href="https://www.linkedin.com/in/mohanad-aldardiry-175614239/">
-              <img src={linkedinLogo} alt="Linkedin Logo " />
-            </a>
-            <a href="mailto:mohanad.ALdardiry@gmail.com">
-              <img src={gmailLogo} alt="Gmail Logo " />
-            </a>
-            <a href="https://github.com/Mohannad-AlDardiri">
-              <img src={githubLogo} alt="github Logo " />
-            </a>
+            <li>
+              <a href="https://www.linkedin.com/in/mohanad-aldardiry-175614239/">
+                <img src={linkedinLogo} alt="Linkedin Logo " />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:mohanad.ALdardiry@gmail.com">
+                <img src={gmailLogo} alt="Gmail Logo " />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Mohannad-AlDardiri">
+                <img src={githubLogo} alt="github Logo " />
+              </a>
+            </li>
           </ul>
         </footer>
       </main>
