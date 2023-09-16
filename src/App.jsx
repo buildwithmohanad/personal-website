@@ -45,10 +45,13 @@ function App() {
         <section className="about">
           <h2>About me</h2>
           <p>
-            third-year computer science student, aspiring front-end web
-            developer I started learning web-building science when I was 13
-            years old. I have built lots of pages and road books, so I have a
-            bit of experience in building fully accessible and swift websites.
+            I am a skilled third-year computer science student with a passion
+            for front-end web development. I started my journey in web-building
+            science at the young age of 13 and since then, I have honed my
+            skills to become an expert in building fully accessible and fast
+            websites. Through my vast experience and numerous successful
+            projects, I am confident in my abilities to deliver high-quality
+            results and exceed expectations.
           </p>
         </section>
         <Suspense fallback={<div className="Loading">loading...</div>}>
