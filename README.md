@@ -1,11 +1,11 @@
 # Hi 👋 I'm Mohanad Al-Dardiry
 ### A passionate frontend developer from Egypt
 
-- 🔭 I’m future front-end web developer
-- 🌱 I’m currently learning web-design
-- 📫 How to reach me: mohanad.ALdardiry@gmail.com
+I am a skilled third-year computer science student with a passion for front-end web development. I started my journey in web-building science at the young age of 13 and since then, I have honed my skills to become an expert in building fully accessible and fast websites. Through my vast experience and numerous successful projects, I am confident in my abilities to deliver high-quality results and exceed expectations.
 
-### This is my personal website
+
+### This is my personal website to introduce myself to you
+
 
 ### Built with
 
