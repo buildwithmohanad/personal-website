@@ -108,14 +108,11 @@ main > #experience section.projects .project .projectDetails a {
 
 /* skills */
 main > #experience > section.skills > div {
-  @apply flex flex-wrap gap-6 justify-center;
+  @apply flex flex-wrap  gap-6 justify-center;
 }
 main > #experience > section.skills .skill {
   @apply flex flex-col items-center;
   align-self: stretch;
-}
-main > #experience > section.skills .skill img {
-  @apply h-20 mb-2 xl:h-24 2xl:h-28;
 }
 main > #experience > section.skills .skill p {
   @apply xl:text-xl 2xl:text-2xl;
@@ -146,8 +143,5 @@ footer > ul {
   @apply flex ml-2;
 }
 footer > ul li:nth-child(2) {
-  @apply mx-4 xl:mx-6;
-}
-footer > ul img {
-  @apply h-10 md:h-12 xl:h-14 2xl:h-[4.5rem];
+  @apply mx-6 xl:mx-8;
 }

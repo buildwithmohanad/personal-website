@@ -1,5 +1,6 @@
 import React from "react";
 import Projects_Data from "../assets/Projects_Data.json";
+import Image from "next/image";
 function ProjectsSection() {
   let id = 100;
 
@@ -23,7 +24,7 @@ function ProjectsSection() {
               }}
               className="project"
             >
-              <img
+              <Image
                 src={require(`../assets/Projects/${project.Image}`)}
                 alt="project"
               />

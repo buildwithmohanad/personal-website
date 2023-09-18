@@ -5,7 +5,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_hriw8u7",
@@ -28,11 +27,11 @@ const Contact = () => {
         <h2>contact form</h2>
 
       <form ref={form} onSubmit={sendEmail}>
-        <label for="name">Name</label>
+        <label htmlFor="name">Name</label>
         <input id="name" type="text" name="user_name" />
-        <label for="Email">Email</label>
+        <label htmlFor="Email">Email</label>
         <input id="Email" type="email" name="user_email" />
-        <label for="Message">Message</label>
+        <label htmlFor="Message">Message</label>
         <textarea id="Message" name="message" />
         <input type="submit" id="submitBtn" value="Send" />
       </form>
