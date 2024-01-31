@@ -2,7 +2,6 @@ import React, { Suspense, lazy } from "react";
 import logo from "../assets/logo.webp";
 import Image from "next/image";
 import heroIMG from "../assets/hero_image.svg";
-import linkedinLogo from "../assets/linkedin.svg";
 import githubLogo from "../assets/github.svg";
 import gmailLogo from "../assets/gmail.svg";
 
@@ -33,7 +32,7 @@ function App() {
       <main>
         <section className="landing">
           <div>
-            <h1>Hi, I&apos;m Mohannad</h1>
+            <h1>Hi, I&apos;m Ahmed</h1>
             <p>
               you must have a swift website to grow your business
               <b>
@@ -65,18 +64,14 @@ function App() {
         <footer>
           <p>Handcrafted by me ©️ 2022</p>
           <ul>
+       
             <li>
-              <a href="https://www.linkedin.com/in/mohanad-aldardiry-175614239/">
-                <Image src={linkedinLogo} alt="Linkedin Logo " className="w-auto h-10 md:h-12 xl:h-14 2xl:h-[4.5rem]" />
-              </a>
-            </li>
-            <li>
-              <a href="mailto:mohanad.ALdardiry@gmail.com">
+              <a href="mailto:ahmed.eldardeery.eng@gmail.com">
                 <Image src={gmailLogo} alt="Gmail Logo " className="w-auto h-10 md:h-12 xl:h-14 2xl:h-[4.5rem]"/>
               </a>
             </li>
             <li>
-              <a href="https://github.com/Mohannad-AlDardiri">
+              <a href="https://github.com/ahmed-eldardeery">
                 <Image src={githubLogo} alt="github Logo "className="w-auto h-10 md:h-12 xl:h-14 2xl:h-[4.5rem]" />
               </a>
             </li>

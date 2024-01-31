@@ -7,9 +7,9 @@ export default function App({ Component, pageProps }) {
   <Head>
     <meta
       name="description"
-      content="Mohannad's Aldardiry personal website"
+      content="Ahmed's Eldardeery personal website"
     />    
-    <title>Mohannad</title>
+    <title>Ahmed</title>
     <link rel="icon" href={favIcon.src} />
   </Head>
   <Component {...pageProps} />
